@@ -1,0 +1,252 @@
+html {
+  font-size: 18px;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+}
+
+header p {
+  color: White;
+  font-size: 1rem;
+  font-family: Helvetica;
+  padding-top:0.66rem;
+  padding-bottom:0.66rem;
+}
+
+header img {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  height:1.5rem;
+}
+
+header .site-container {
+  display:flex;
+  align-items: center;
+}
+
+.site-container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main-banner {
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-banner .site-container {
+  padding-top:9rem;
+}
+
+#banner-box {
+  width: 25rem;
+  background-color: black;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: White;
+}
+
+#banner-box p {
+  font-size:  1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+#banner-box h2 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+nav {
+  background-color: firebrick;
+  width:100%;
+  color: white;
+  display:flex;
+  justify-content: space-around;
+}
+
+nav p {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family:Helvetica;
+  font-size: 1rem;
+}
+
+main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.product {
+  border:4px solid black;
+  width: 30%;
+  text-align: center;
+}
+
+
+.product-name {
+  background-color: black;
+  color: white;
+}
+
+.product-name p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Helvetica;
+}
+
+main .site-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-photo {
+  margin: 2rem 0rem;
+  height: 9rem;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-photo img {
+  max-height:9rem;
+  max-width:100%;
+}
+
+aside .site-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+aside section {
+  width: 35%;
+}
+
+.supplementary{
+  background-color: black;
+}
+
+.supplementary h2{
+  color: White;
+  padding:1rem 2rem;
+  font-family: Helvetica;
+  margin-bottom:4px;
+}
+
+aside p {
+  font-size: 0.9rem;
+}
+
+footer {
+  height:5rem;
+  background-color: black;
+  color: White;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width:1025px){
+  .tablet {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+
+  .normal-size{
+    display: none;
+  }
+
+  .site-container {
+    width: 98%;
+  }
+
+  .product {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  html {
+    font-size: 18px;
+  }
+
+  .site-container{
+    width:100%;
+  }
+
+  header .site-container{
+    height: 2rem;
+    display:flex;
+    justify-content: center;
+  }
+
+  header p{
+    display:none;
+  }
+
+  #main-banner {
+    height: 15rem;
+  }
+
+  #main-banner .site-container {
+    padding-top: 10rem;
+  }
+
+  #banner-box {
+    width:100%;
+  }
+
+  #banner-box p {
+    font-size:  0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  #banner-box h2 {
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+
+  .pc-only {
+    display:none;
+  }
+
+  .product{
+    width: 90%;
+  }
+
+  main .site-container {
+    justify-content: center;
+  }
+
+  aside .site-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside section {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+}
